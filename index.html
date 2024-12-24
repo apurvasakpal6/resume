@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>resume</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>Apurva Sakpal</h1>
+                    <p class="tagline">Web Developer | Designer</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+             </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am an enthusiastic web developer with a strong foundation in HTML, CSS and JavaScript. Though I am new to the industry, I am passionate about creating responsive, user-friendly websites and web applications. I am constantly learning and eager to apply my skills to real-world projects. With a keen interest in problem-solving and a commitment to improving my craft, I am excited to contribute to the ever-evolving world of web development.</p>
+            <p>Feel free to explore my resume to learn more about my professional journey and skillset.</p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>You can download my full resume by clicking the link below:</p>
+            <a href="apurva sakpal.pdf" class="btn" target="_blank">Download Resume</a>
+        </div>
+    </section>  
+
+    <!--footer section-->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Apurva Sakpal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the navigation menu
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
