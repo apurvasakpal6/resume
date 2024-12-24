@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>projects</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>Apurva Sakpal</h1>
+                    <p class="tagline">Web Developer | Designer</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+             </div>
+        </div>
+    </header>
+
+    <!--project section-->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Currency Detector application for Visually Impaired</h3>
+                <p>The Currency Detector App empowers visually impaired users by allowing them to identify currency
+                    denominations quickly and accurately. Built using Java, the app utilizes Camera for image capture and Kaggle
+                    for analyze datasets</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Weather Forecast</h3>
+                <p>A weather website is a web application that provides real-time. Weather information to users. It typically
+                    displays current weather Conditions, forecasts and other related data such as temperature, Humidity, wind
+                    speed and precipitation.
+                    </p>
+            </div>
+            <div class="project">
+                <h3>Project 3: Netix Home Page Clone</h3>
+                <p>A Netix landing page clone is a website or application. That is designed to imitate the layout, features
+                    and functionality Of Netix’s landing page it is often use to showcase design skills.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        // JavaScript to toggle the navigation menu
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
