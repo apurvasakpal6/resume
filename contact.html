@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>contact</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>Apurva Sakpal</h1>
+                    <p class="tagline">Web Developer | Designer</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+             </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>You can reach me through the following:</p>
+                
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:apurvasakpal642@gmail.com">apurvasakpal642@gmail.com</a></p>
+                <p><strong>Phone:</strong> +91 7139175149</p>
+                    
+                <!-- Social Media Links (Optional) -->
+                <div class="social-links">
+                        <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // JavaScript to toggle the navigation menu
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
