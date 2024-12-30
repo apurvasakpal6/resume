@@ -40,6 +40,15 @@
         </div>
     </section>
 
+    <!--counter for resume -->
+    <section id="project1" class="project1">
+        <div class="container">
+            <h2>Projects count</h2>
+            <span class="num" data-val="4">0</span>
+        </div>
+    </section>
+
+
     <!-- Resume Section -->
     <section id="resume" class="resume">
         <div class="container">
@@ -64,6 +73,24 @@
         menuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
+
+               
+let valueDisplays = document.querySelectorAll(".num");
+let interval =  4000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+
     </script>
 
 </body>
